@@ -1,6 +1,14 @@
 import ReactMarkdown from "react-markdown";
+import React, { useState } from "react";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
+
+const modules = {
+  toolbar: [[{ font: [] }], [{ size: [] }], ["link", "image", "video"]],
+};
 
 const Main = ({ activeNote, onUpdateNote }) => {
+  const [value, setValue] = useState("");
   const onEditField = (field, value) => {
     onUpdateNote({
       ...activeNote,
@@ -14,6 +22,12 @@ const Main = ({ activeNote, onUpdateNote }) => {
   return (
     <div className="app-main">
       <div className="app-main-note-edit">
+        <ReactQuill
+          theme="snow"
+          value={value}
+          onChange={setValue}
+          modules={modules}
+        />
         <input
           type="text"
           id="title"
@@ -34,6 +48,10 @@ const Main = ({ activeNote, onUpdateNote }) => {
         <ReactMarkdown className="markdown-preview">
           {activeNote.body}
         </ReactMarkdown>
+        <div
+          className="markdown-preview"
+          dangerouslySetInnerHTML={{ __html: value }}
+        ></div>
       </div>
     </div>
   );

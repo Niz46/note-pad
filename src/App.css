@@ -117,11 +117,12 @@ textarea {
   border: 1px solid #ddd;
   margin-bottom: 20px;
   width: 100%;
-  height: calc(50vh - 130px);
+  height: calc(40vh - 130px);
   padding: 10px;
   resize: none;
   font-size: inherit;
   font-family: inherit;
+  outline: none;
 }
 .app-main-note-edit input {
   height: 50px;
