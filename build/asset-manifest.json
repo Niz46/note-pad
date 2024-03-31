@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/note-pad/static/css/main.e2000596.css",
-    "main.js": "/note-pad/static/js/main.2bb8636b.js",
+    "main.css": "/note-pad/static/css/main.0b761669.css",
+    "main.js": "/note-pad/static/js/main.58d44670.js",
     "index.html": "/note-pad/index.html",
-    "main.e2000596.css.map": "/note-pad/static/css/main.e2000596.css.map",
-    "main.2bb8636b.js.map": "/note-pad/static/js/main.2bb8636b.js.map"
+    "main.0b761669.css.map": "/note-pad/static/css/main.0b761669.css.map",
+    "main.58d44670.js.map": "/note-pad/static/js/main.58d44670.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2000596.css",
-    "static/js/main.2bb8636b.js"
+    "static/css/main.0b761669.css",
+    "static/js/main.58d44670.js"
   ]
 }
