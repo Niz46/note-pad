@@ -82,7 +82,7 @@ button:hover {
 }
 .app-sidebar-note.active,
 .app-sidebar-note.active small {
-  background: #08c;
+  background: #a99e4c;
   color: white;
 }
 
@@ -117,7 +117,7 @@ textarea {
   border: 1px solid #ddd;
   margin-bottom: 20px;
   width: 100%;
-  height: calc(41vh - 130px);
+  height: calc(44vh - 130px);
   padding: 10px;
   resize: none;
   font-size: inherit;
