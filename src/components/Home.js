@@ -4,7 +4,12 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 
 const modules = {
-  toolbar: [[{ font: [] }], [{ size: [] }], ["link", "image", "video"]],
+  toolbar: [
+    [{ font: [] }],
+    [{ size: [] }],
+    ["bold", "italic", "underline", "strike", "blockquote"],
+    ["link", "image", "video"],
+  ],
 };
 
 const Main = ({ activeNote, onUpdateNote }) => {
