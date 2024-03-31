@@ -1,3 +1,6 @@
+import { CgAdd } from "react-icons/cg";
+import { MdDeleteForever } from "react-icons/md";
+
 const Sidebar = ({
   notes,
   onAddNote,
@@ -11,7 +14,7 @@ const Sidebar = ({
     <div className="app-sidebar">
       <div className="app-sidebar-header">
         <h1>Notes</h1>
-        <button onClick={onAddNote}>Add</button>
+        <button onClick={onAddNote}><CgAdd /></button>
       </div>
       <div className="app-sidebar-notes">
         {sortedNotes.map(({ id, title, body, lastModified }, i) => (
@@ -22,7 +25,7 @@ const Sidebar = ({
           >
             <div className="sidebar-note-title">
               <strong>{title}</strong>
-              <button onClick={(e) => onDeleteNote(id)}>Delete</button>
+              <button onClick={(e) => onDeleteNote(id)}><MdDeleteForever /></button>
             </div>
 
             <p>{body && body.substr(0, 100) + "..."}</p>

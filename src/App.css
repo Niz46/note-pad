@@ -94,7 +94,7 @@ button:hover {
 }
 .app-main-note-edit,
 .app-main-note-preview {
-  height: 50vh;
+  height: 55vh;
 }
 
 .no-active-note {
@@ -117,7 +117,7 @@ textarea {
   border: 1px solid #ddd;
   margin-bottom: 20px;
   width: 100%;
-  height: calc(40vh - 130px);
+  height: calc(41vh - 130px);
   padding: 10px;
   resize: none;
   font-size: inherit;
